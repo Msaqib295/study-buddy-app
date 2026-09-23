@@ -1,0 +1,47 @@
+name: study_buddy_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  file_picker: ^8.1.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  shared_preferences: ^2.3.2
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter_native_splash:
+  color: "#FAFAFA"
+  image: assets/splash/splash_logo_light.png
+  color_dark: "#121212"
+  image_dark: assets/splash/splash_logo_dark.png
+  android_12:
+    color: "#FAFAFA"
+    image: assets/splash/splash_logo_light.png
+    color_dark: "#121212"
+    image_dark: assets/splash/splash_logo_dark.png
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/app_icon_light.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/app_icon_light.png
+
