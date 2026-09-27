@@ -116,9 +116,7 @@ class _AskScreenState extends State<AskScreen> {
 
     try {
       final userId = FirebaseAuth.instance.currentUser!.uid;
-      final url = Uri.parse(
-        "http://10.0.2.2:8000/ask?question=$question&user_id=$userId",
-      );
+      final url = Uri.parse("http://130.210.41.65:8000/ask?question=$question&user_id=$userId");
       final response = await http
           .post(url)
           .timeout(const Duration(seconds: 30));

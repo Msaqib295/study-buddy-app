@@ -31,7 +31,9 @@ class _UploadScreenState extends State<UploadScreen> {
       _isLoadingDocs = true;
     });
 
-    final url = Uri.parse("http://10.0.2.2:8000/documents?user_id=$_userId");
+    final url = Uri.parse(
+      "http://130.210.41.65:8000/documents?user_id=$_userId",
+    );
     final response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -60,7 +62,7 @@ class _UploadScreenState extends State<UploadScreen> {
     });
 
     final file = result.files.first;
-    final url = Uri.parse("http://10.0.2.2:8000/upload?user_id=$_userId");
+    final url = Uri.parse("http://130.210.41.65:8000/upload?user_id=$_userId");
     final request = http.MultipartRequest('POST', url);
 
     request.files.add(await http.MultipartFile.fromPath('file', file.path!));
@@ -77,7 +79,7 @@ class _UploadScreenState extends State<UploadScreen> {
 
   Future<void> _deleteDocument(String filename) async {
     final url = Uri.parse(
-      "http://10.0.2.2:8000/documents/$filename?user_id=$_userId",
+      "http://130.210.41.65:8000/documents/$filename?user_id=$_userId",
     );
     await http.delete(url);
     await _fetchDocuments();
