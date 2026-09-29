@@ -14,8 +14,7 @@ Future<void> loadSavedTheme() async {
   } else if (saved == 'dark') {
     themeNotifier.value = ThemeMode.dark;
   } else {
-    themeNotifier.value =
-        ThemeMode.system; // default / no explicit choice saved
+    themeNotifier.value = ThemeMode.system;
   }
 }
 

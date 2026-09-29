@@ -38,7 +38,7 @@ class SettingsScreen extends StatelessWidget {
     final userId = user.uid;
 
     try {
-      await http.delete(Uri.parse("http://130.210.41.65:8000/user/$userId"));
+      await http.delete(Uri.parse("http://155.248.250.171:8000/user/$userId"));
       await DBHelper.clearHistory();
       await user.delete();
 
