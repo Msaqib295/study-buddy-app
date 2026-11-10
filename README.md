@@ -1,8 +1,12 @@
 # Study Buddy
 
-An AI-powered study assistant that answers questions from your own uploaded notes, using retrieval-augmented generation (RAG).
+A document Q&A system with multi-user isolation. Upload PDFs, ask questions in plain language, and get answers grounded in your own documents, with the source file shown for every answer.
 
-Built as a portfolio project to explore end-to-end AI application development, from a RAG pipeline and backend API design to a fully native, deployed mobile app.
+Built end to end: Flutter app, FastAPI + ChromaDB backend, Firebase Auth, deployed on Oracle Cloud.
+
+
+https://github.com/user-attachments/assets/c7a61d5d-2df4-4ec4-90a7-ce5eef68eb3d
+
 
 ## Features
 
@@ -45,4 +49,4 @@ This project requires a Firebase config file that isn't included in this repo fo
 
 ## What I learned building this
 
-This project took me through the full stack of building an AI application: chunking and embeddings from first principles, building and debugging a RAG pipeline, wrapping it in a REST API, building a native mobile UI with real-time chat, integrating authentication with proper per-user data scoping, and deploying to a self-managed Linux server on a free-tier cloud instance.
+This project took me through the full stack of building an AI application: chunking and embeddings from first principles, building and debugging a RAG pipeline, wrapping it in a REST API, building a mobile UI with real-time chat, integrating authentication with proper per-user data scoping, and deploying to a self-managed Linux server on a free-tier cloud instance.
