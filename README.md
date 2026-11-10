@@ -4,6 +4,8 @@ A document Q&A system with multi-user isolation. Upload PDFs, ask questions in p
 
 Built end to end: Flutter app, FastAPI + ChromaDB backend, Firebase Auth, deployed on Oracle Cloud.
 
+**Try it on Android:** [Download the APK](https://github.com/Msaqib295/study-buddy-app/releases/latest)
+
 
 https://github.com/user-attachments/assets/c7a61d5d-2df4-4ec4-90a7-ce5eef68eb3d
 
